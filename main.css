@@ -9,6 +9,7 @@
 
 	pre {
 		margin-left: -20px;
+		padding: 24px 24px 24px 0;
 		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
 		color: white;
 		font-size: 2.3vw;
