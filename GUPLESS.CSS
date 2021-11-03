@@ -7,8 +7,15 @@
 #GUPLESS {
     margin-top: 120px;
     image-rendering: pixelated;
-  }
+}
 
+#right {
+    text-align: right;
+}
+
+#center {
+    text-align: center;
+}
 .layout {
     width: 640px;
     margin-left: auto;
