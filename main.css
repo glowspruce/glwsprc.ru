@@ -12,6 +12,14 @@
 		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
 		color: white;
 		font-size: 2.3vw;
+		height: 24px;
+	}
+
+	#grad {
+		padding: 24px 24px 24px 0;
+		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
+		color: white;
+		font-size: 2.3vw;
 	}
 
 	img {
@@ -40,8 +48,9 @@ body {
 	background-color: #fff;
 	filter: blur(5px);
 	background: linear-gradient(90deg, rgba(0,94,255,1) 0%, rgba(0,246,255,1) 100%);
-	background-color: #202124;*/
-	background: linear-gradient(90deg, #4b3136 0%,#423a2b 100%);
+	background-color: #202124;
+	background: linear-gradient(90deg, #4b3136 0%,#423a2b 100%);*/
+	background-color: #dce1e6;
 }
 
 @media screen and (min-width: 800px) {
@@ -56,7 +65,7 @@ body {
 		width: 720px;
 		/*margin-left: auto;
 		margin-right: auto;*/
-		background-color: #fff;
+		background-color: #ffffff;
 		border-radius: 12px;
 		margin-bottom: 2.3vw;
 	/*box-shadow: 0px 0px 4px rgba(0,0,0,5);*/
@@ -98,6 +107,14 @@ tt {
 		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
 		color: white;
 		font-size: 17.7px;
+	}
+	#grad {
+		padding-top: 12px;
+		border-radius: 10px 10px 0 0;
+		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
+		color: white;
+		font-size: 17.7px;
+		height: 24px;
 	}
 }
 
