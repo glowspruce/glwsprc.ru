@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 @media screen and (max-width: 800px) {
 	.container {
 		font-size: 150%;
@@ -15,11 +20,18 @@
 		height: 24px;
 	}
 
-	#gradient {
+	#gradienttop {
 		padding: 24px 24px 24px 0;
 		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
 		color: white;
 		font-size: 2.3vw;
+	}
+
+	#gradientmiddle {
+		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
+		color: white;
+		font-size: 2.3vw;
+		height: 12px;
 	}
 
 	img {
@@ -28,11 +40,6 @@
 		min-width: 320px;
 		max-width: 100%;
 	}
-}
-
-* {
-	margin: 0;
-	padding: 0;
 }
 
 a {
@@ -61,14 +68,14 @@ body {
 		left: 50%;
 		margin-right: -50%;
 		transform: translate(-50%, -50%);
-
 		width: 600px;
-		/*margin-left: auto;
+		/*width: 600px;
+		margin-left: auto;
 		margin-right: auto;*/
 		background-color: #ffffff;
 		border-radius: 12px;
 		margin-bottom: 2.3vw;
-	/*box-shadow: 0px 0px 4px rgba(0,0,0,5);*/
+		box-shadow: 0px 0px 24px rgba(0,0,0,0.2);
 	}
 
 	img {
@@ -114,13 +121,21 @@ tt {
 		font-size: 17.7px;
 	}
 
-	#gradient {
+	#gradienttop {
 		padding-top: 12px;
 		border-radius: 10px 10px 0 0;
 		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
 		color: white;
 		font-size: 17.7px;
 		height: 24px;
+	}
+
+	#gradientmiddle {
+		/*border-radius: 10px 10px 0 0;*/
+		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
+		color: white;
+		font-size: 17.7px;
+		height: 8px;
 	}
 
 	footer {
@@ -163,3 +178,17 @@ header > a {
 }
 */
 
+#hello {
+	/*display: block;
+	text-align: center;*/
+	text-align: center;
+}
+
+#hello > img {
+	width: 72%;
+}
+
+#hello > strong {
+	display: block;
+	margin: 0 24px 0 24px;
+}
