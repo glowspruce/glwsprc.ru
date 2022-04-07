@@ -12,130 +12,129 @@ a {
 
 /*			Mobile			*/
 @media screen and (max-width: 768px) {
-	.container {
-		font-size: 180%;
-		/*max-block-size: 800px;*/
-		min-width: 320px;
-		padding-top: 20px;
-		background-color: #fff;
+	body {
+		font-size: 130%;		
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		width: 100%;
+		height: 100%;
+		background-color: white;
 	}
 
-	pre {
-		padding: 24px 24px 24px 0;
-		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
-		color: white;
-		font-size: 2.3vw;
-		height: 24px;
+	.content p, h2, h3 {
+		margin: 20px;
 	}
 
-	#gradienttop {
-		padding: 24px 24px 24px 0;
-		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
-		color: white;
-		font-size: 2.3vw;
-	}
-
-	#gradientmiddle {
-		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
-		color: white;
-		font-size: 2.3vw;
-		height: 12px;
-	}
-
-	/*img {
-		margin-bottom: 10px;
-		margin-left: -12px;
-		min-width: 320px;
-		max-width: 100%;
-	}*/
-	
 	footer {
-		background-color: #e6e6e6;
-		padding-top: 10px;
+		box-shadow: 0px 0px 24px rgba(0,0,0,0.2);
+		width: 100%;
+		height: 32px;
+		background-color: #eeeeee;
+		padding: 15px 0 10px 0;
 		text-align: center;
-		padding-bottom: 20px;
 		position: fixed;
 		bottom: 0;
-		width: 100%;
 	}
+
+	header {
+		text-align: center;
+		backdrop-filter: blur(10px);
+		width: 100%;
+		box-shadow: 0px 0px 24px rgba(0,0,0,0.2);
+	}
+
+	header h1 {
+		padding: 20px;
+	}
+
+/*			navbar			*/
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	  }
+	  
+	  li {
+		float: left;
+	  }
+	  
+	  li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	  }
+	  
+	  /*li a:hover:not(.active) {
+		background-color: #111;
+	  }*/
+	  
+	  .active {
+		background-color: #e2e2e2;
+	  }
 }
 
 /*			Desktop			*/
 @media screen and (min-width: 769px) {
-	.container {
-		font-size: 150%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-right: -50%;
-		transform: translate(-50%, -50%);
-		width: 800px;
-		height: 600px;
-		background-image: url(/window.png);
-		background-repeat: no-repeat;
-		margin-left: auto;
-		margin-right: auto;
-		background-color: #ffffff;
-		/*border-radius: 12px;*/
-		margin-bottom: 2.3vw;
-		box-shadow: 0px 0px 24px rgba(0,0,0,0.2);
+	body {
+		font-size: 100%;		
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		width: 100%;
+		height: 100%;
+		background-color: white;
 	}
 
-	img {
-		margin-bottom: 10px;
-		margin-left: -20px;
-		width: 500px;
-	}
-
-	#gradienttop {
-
-		display: none;
-
-		padding-top: 10px;
-		border-radius: 10px 10px 0 0;
-		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
-		color: white;
-		font-size: 17.7px;
-		height: 24px;
-	}
-
-	#gradientmiddle {
-
-		display: none;
-
-		/*border-radius: 10px 10px 0 0;*/
-		background: linear-gradient(90deg, rgb(218, 123, 143) 0%,rgb(228, 174, 73) 100%);
-		color: white;
-		font-size: 17.7px;
-		height: 8px;
+	.content p, h2, h3 {
+		margin: 20px;
 	}
 
 	footer {
-		padding-top: 10px;
+		box-shadow: 0px 0px 24px rgba(0,0,0,0.2);
+		width: 100%;
+		height: 32px;
+		background-color: #eeeeee;
+		padding: 15px 0 10px 0;
 		text-align: center;
-		padding-bottom: 20px;
 		position: fixed;
 		bottom: 0;
-		width: 100%;
-		/*border-radius: 0 0 12px 12px;*/
 	}
 
 	header {
-		margin-top: 15px;
+		backdrop-filter: blur(10px);
+		width: 100%;
+		box-shadow: 0px 0px 24px rgba(0,0,0,0.2);
 	}
-}
 
-/*			Body			*/
-body {
-	/*background: url(bg.jpg);
-  	background-size: cover;
-  	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: #fff;
-	filter: blur(5px);
-	background: linear-gradient(90deg, rgba(0,94,255,1) 0%, rgba(0,246,255,1) 100%);
-	background-color: #202124;
-	background: linear-gradient(90deg, #4b3136 0%,#423a2b 100%);*/
-	background-color: #dce1e6;
+	header h1 {
+		padding: 20px;
+	}
+
+/*			navbar			*/
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	  }
+	  
+	  li {
+		float: left;
+	  }
+	  
+	  li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	  }
+	  
+	  /*li a:hover:not(.active) {
+		background-color: #111;
+	  }*/
+	  
+	  .active {
+		background-color: #e2e2e2;
+	  }
 }
