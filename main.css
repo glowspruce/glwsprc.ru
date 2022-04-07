@@ -73,6 +73,10 @@ a {
 	  .active {
 		background-color: #e2e2e2;
 	  }
+
+	  li a:hover:not(.active) {
+		background-color: #eeeeee;
+	  }
 }
 
 /*			Desktop			*/
@@ -136,5 +140,9 @@ a {
 	  
 	  .active {
 		background-color: #e2e2e2;
+	  }
+
+	  li a:hover:not(.active) {
+		background-color: #eeeeee;
 	  }
 }
