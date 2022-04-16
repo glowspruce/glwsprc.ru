@@ -1,17 +1,22 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta charset="utf-8">
 	<title>ecnecsenimul — Home</title>
 </head>
 <body>
+	<div id="loading">
+		<img id="loading-image" src="loader.gif">
+	</div>
 	<header>
-		<h1>ecnecsenimul — website</h1>
+		<h1><a href="index.html">ecnecsenimul — website</a></h1>
 		<ul>
 			<li><a class="active" href="home.html">Home</a></li>
 			<li><a href="downloads.html">Downloads</a></li>
-		    <li style="float:right"><a href="">About</a></li>
+		    <li style="float:right"><a href="about.html">About</a></li>
 		</ul>
 	</header>
 	<div class="content">
@@ -41,5 +46,10 @@
             </li>
         </ul>
     </footer>
+	<script>
+		$(window).on('load', function() { 
+			$('#loading').hide();
+		});
+	</script>
 </body>
 </html>

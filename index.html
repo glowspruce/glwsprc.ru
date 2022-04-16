@@ -1,5 +1,7 @@
 <html>
 <head>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="refresh" content="0;home.html" />
 	<meta name="google-site-verification" content="vTSAtjl8PdnLRS-ya4X556JgTQbXaCN9HKHVQdE-QKw" />
@@ -7,5 +9,13 @@
 	<title>ecnecsenimul — website</title>
 </head>
 <body>
+	<div id="loading">
+		<img id="loading-image" src="loader.gif">
+	</div>
+	<script>
+		$(window).on('load', function() { 
+			$('#loading').hide();
+		});
+	</script>
 </body>
 </html>
