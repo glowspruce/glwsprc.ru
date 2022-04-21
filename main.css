@@ -244,11 +244,19 @@ body {
 	}
 }
 
-/*			loading			*/
-
 header a {
 	color: #111;
 }
+
+#downloads {
+	text-align: center;
+}
+
+#downloads img {
+	margin: 20px;
+}
+
+/*			loading			*/
 
 #loading {
 	position: fixed;
