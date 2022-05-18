@@ -117,8 +117,8 @@ body {
 	}
 } */
 
-/*			Desktop			*/
-@media screen and (min-width: 769px) {
+/*			Desktop			
+@media screen and (min-width: 769px) {*/
 	body {
 		font-size: 100%;
 		width: 100%;
@@ -133,7 +133,7 @@ body {
 		margin-left: 20px;
 	}
 
-	div.block p, h3 {
+	div.block p h3 {
 		margin-left: 20px;
 	}
 
@@ -165,7 +165,7 @@ body {
 		font-weight: bold;
 		color: #e2e2e2;
 	}
-}
+
 
 /*			block			*/
 
