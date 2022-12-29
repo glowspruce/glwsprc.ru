@@ -21,6 +21,10 @@ a {
 }
 
 .layout {
+    min-height: calc(100vh - 50px);
+}
+
+.content {
     background: #fff;
     position: absolute;
     top: 50%;
@@ -40,7 +44,7 @@ a {
 }
 
 footer {
-	text-align: center;
+    text-align: center;
 }
 
 footer li a {
