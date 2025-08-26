@@ -23,7 +23,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /*overflow: hidden;*/
+    overflow-x: hidden;
 }
 
 a {
@@ -45,21 +45,21 @@ a:hover {
 }
 
 #emoji:hover {
-    width: 105px;
-    height: 105px;
+    width: 120px;
+    height: 120px;
 }
 
-.layout {
-    min-height: calc(100vh - 50px);
+.header-layout {
+    /*min-height: calc(100vh - 50px);*/
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
     background: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    position: relative;
 }
 
 #title {
@@ -68,28 +68,117 @@ a:hover {
     margin: auto;
 }
 
-#title b{
+#title p:after {
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnVtMmo2bDlmOGVpbmZhdmNsbHY0YmdmdHVicGVma2hxbDRtdG9pbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/aO5tsjZ3hHUt2/giphy.gif);
+    background-size: cover;
+    content: "";
+    height: 100px;
+    left: 60px;
+    position: absolute;
+    top: -150px;
+    width: 100px;
+}
+
+#emoji:after {
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXNoMmh5djBrc3VrYjBld2cxbWFoZDRnOGdpaWFnOHozMnBpYmwzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/HYGYWAlgFT6jS/giphy.gif);
+    background-size: cover;
+    content: "";
+    height: 100px;
+    left: -100px;
+    position: absolute;
+    top: -15px;
+    width: 100px;
+}
+
+.content:after {
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmJsYXUyMzlyZXQ4c3M2NW00ZjhwNGFwdjhvdjN1a2kzemU4eDlkeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hjLtnBNLduUyA/giphy.gif);
+    background-size: cover;
+    content: "";
+    height: 150px;
+    left: 300px;
+    position: absolute;
+    top: 10px;
+    width: 120px;
+}
+
+#title p{
     transition: .3s all;
     font-family: 'Lato Bold';
     font-size: 64px;
     color: #2c2d2e;
+    letter-spacing: -.05em;
+    line-height: 100%;
+    user-select: none;
 }
 
-#title p {
-    margin-top: 24px;
-    color: #2c2d2e;
+#title p:hover {
+    font-size: 70px;
 }
 
-#title i {
-    color: #7a7a7a;
+#downloads {
+    background-color: #f4f4f4;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
 }
 
-#title b:hover {
-    font-size: 66px;
+#downloads h1 {
+    padding: 16px 24px 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 87px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -.05em;
+    line-height: 100%;
+    position: relative;
+    text-transform: lowercase;
+    user-select: none;
 }
+
+/* #downloads h1:after {
+    background-image: url(/images/dogfarts.gif);
+    background-size: cover;
+    content: "";
+    height: 40px;
+    left: 20%;
+    position: absolute;
+    top: 25px;
+    width: 40px;
+} */
+
+.container {
+    padding: 0 10px 10px;
+}
+
+#link {
+    background-color: #fff;
+    width: 256px;
+    border-radius: 16px;
+    padding: 12px;
+    margin: 12px;
+    display: inline-block;
+}
+
+#link img {
+    background-color: #2c2d2e;
+    width: 256px;
+    height: 400px;
+    margin: 10px 0 10px;
+    border-radius: 16px;
+}
+
+#link p {
+    font-size: 20px;
+}
+
 
 footer {
-    text-align: center;
+    margin-top: -4px;
+    user-select: none;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
 }
 
 footer li a {
@@ -99,7 +188,6 @@ footer li a {
 
 footer ul {
 	list-style-type: none;
-	padding: 0;
 	list-style: none;
 	display: inline-block;
 	text-align: left;
